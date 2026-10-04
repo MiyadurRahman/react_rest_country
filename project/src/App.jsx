@@ -1,7 +1,7 @@
 
 import Country from '../component/Country'
 import './App.css'
-const countrypromise=fetch('')
+const countrypromise=fetch('https://openapi.programming-hero.com/api/all').then(res=> res.json())
 function App() {
 
 
@@ -10,7 +10,7 @@ function App() {
       
      
           <h1 className=''>Get started</h1>
-          <Country></Country>
+          <Country countrypromise={countrypromise}></Country>
           
     </>
   )
