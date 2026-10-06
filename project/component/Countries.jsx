@@ -1,3 +1,4 @@
+import "../src/App.css"
 
 
 const Countries = ({country}) => {
