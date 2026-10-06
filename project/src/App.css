@@ -4,8 +4,15 @@ justify-content: left;
 
 }
 .card{
+    border:1px solid green;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+}
+.child{
+
+border: 1px solid red;
+
+
 }

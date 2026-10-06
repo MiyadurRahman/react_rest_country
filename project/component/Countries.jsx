@@ -1,13 +1,13 @@
 import "../src/App.css"
 
 
-const Countries = ({country}) => {
+const Countries = ({country,visithandle}) => {
     console.log(country)
     return (
-        <div>
+        <div className="child">
             <h4>name:{country.name.common}</h4>
            <img src={country.flags.flags.png} alt="" />
-            
+            <button onClick={visithandle}{}>visited</button>
         </div>
     );
 };
