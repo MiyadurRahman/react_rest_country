@@ -1,4 +1,4 @@
-import { use,useState } from "react";
+import { use,useState} from "react";
 import Countries from "./Countries";
 import "../src/App.css";
 
@@ -6,9 +6,10 @@ import "../src/App.css";
 const Country = ({countrypromise}) => {
     const countriesdata=use(countrypromise)
     const countries=countriesdata.countries
-    const[visited,setVisted]=useState([])
+    const [visited,setVisited]=useState([])
+
     function visithandle(ccn3){
-        setVisted(prev=> prev.includes(ccn3)? prev.filter(id=>id!==ccn3):[...prev,ccn3])
+        setVisited(prev=> prev.includes(ccn3)? prev.filter(id=>id!==ccn3):[...prev,ccn3])
     }
   
     return (
