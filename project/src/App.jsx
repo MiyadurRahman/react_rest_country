@@ -2,7 +2,8 @@
 import { Suspense } from 'react'
 import Country from '../component/Country'
 import './App.css'
-const countrypromise=fetch('https://openapi.programming-hero.com/api/all').then(res=> res.json())
+import countriesData from './countries.json'
+const countrypromise=Promise.resolve(countriesData)
 function App() {
 
 
