@@ -23,3 +23,7 @@ border: 1px solid red;
 .not-visited{
     color: gray;
 }
+.visited-card{
+    background-color: blue;
+    color: white;
+}

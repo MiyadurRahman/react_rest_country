@@ -4,7 +4,7 @@ import "../src/App.css"
 const Countries = ({country,visithandle,isVisited}) => {
     console.log(country)
     return (
-        <div className="child">
+        <div className={`child ${isVisited ? "visited-card" : ""}`}>
             <h4>name:{country.name.common}</h4>
            <img src={country.flags.png} alt="" />
         
