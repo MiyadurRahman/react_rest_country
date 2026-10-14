@@ -9,15 +9,8 @@ const Country = ({countrypromise, setVisitedCount}) => {
     const [visited,setVisited]=useState([])
 
     function visithandle(ccn3){
-        setVisited(prev=> {
-            if (prev.includes(ccn3)) {
-                setVisitedCount(count => count - 1)
-                return prev.filter(id=>id!==ccn3)
-            } else {
-                setVisitedCount(count => count + 1)
-                return [...prev, ccn3]
-            }
-        })
+        setVisited(prev=>[...prev,ccn3])
+       setVisitedCount(prev=> prev +1)
     }
   
     return (
